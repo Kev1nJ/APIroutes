@@ -1,4 +1,5 @@
 require('dotenv').config();
+const URI = process.env.MYSQLURI
 
 const Sequelize = require('sequelize');
 

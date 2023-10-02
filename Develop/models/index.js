@@ -11,6 +11,9 @@ const ProductTag = require('./ProductTag');
 // Products belongToMany Tags (through ProductTag)
 
 // Tags belongToMany Products (through ProductTag)
+sequelize.sync({ force: false }).then(() => {
+  console.log('All models synchronized with the database');
+});
 
 module.exports = {
   Product,
