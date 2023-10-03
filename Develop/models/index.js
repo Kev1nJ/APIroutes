@@ -1,4 +1,10 @@
 // import models
+const Sequelize = require('sequelize');
+const sequelize = new Sequelize('ecommerce_db', 'root', 'LiquidSwords329388!', {
+  host: 'localhost',
+  dialect: 'mysql',
+});
+
 const Product = require('./Product');
 const Category = require('./Category');
 const Tag = require('./Tag');
